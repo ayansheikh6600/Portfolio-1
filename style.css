@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    background-image: url(./Assets/logo.png);
+    width: 200px;
+    height: 80px;
+    background-size: cover;
+
+}
+.bg-check{
+    border: 1px solid red;
+    height: 200px;
+}
+.icon{
+    font-size: 100px;
+}
+.content-div{
+    height: 650px;
+    width: 100%;
+    background-image: url(./Assets/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.frnt-logo {
+    background-image: url(./Assets/front-image-01.png);
+    background-size: 370px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.info-div {
+
+    width: 80%;
+    margin: auto auto;
+    margin-top: 140px;
+
+}
+.info-div>h1{
+    font-size: 55px;
+}
+
+
+@media (max-width:992px) {
+    .frnt-logo {
+        background-size: 300px;
+    }
+}
+
+@media (max-width:768px) {
+    .info-div{
+      
+      margin-top: 0px;
+      margin-bottom: 20px;  
+    }
+    .frnt-logo{
+        margin-top: 0px;
+       height: 300px;
+       background-size: 190px;
+
+    }
+    main{
+        margin-top: -50px;
+        flex-direction: column-reverse;
+    }
+    
+}
+@media (max-width : 572px) {
+    .info-div>h1{
+        font-size: 47px;
+    }
+}
+@media (max-width:489px) {
+    .frnt-logo{
+        background-image: url(./Assets/aqqq-01.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .info-div>h5{
+        font-size: 15px;
+    }
+    .info-div>h1{
+        font-size: 30px;
+    }
+    
+}
