@@ -32,8 +32,7 @@ function send(){
   }
     firebaseRef.push(email);
     firebaseRef.push(desinput);
-   
     console.log(email) 
- 
+    
 }
     
