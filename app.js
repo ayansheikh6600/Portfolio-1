@@ -24,15 +24,15 @@ const firebaseRef = firebase.database().ref('emails');
 // });
 
 function send(){
-  const email = document.getElementById("input").value;
- const desinput = document.getElementById("desinput").value;
-  if (!email || !desinput){
+  const email = document.getElementById("input");
+ const desinput = document.getElementById("desinput");
+  if (!email.value || !desinput.value){
     alert("enter email address")
     return
   }
-    firebaseRef.push(email);
-    firebaseRef.push(desinput);
-    console.log(email) 
-    
+    firebaseRef.push(email.value);
+    firebaseRef.push(desinput.value);
+    console.log(email.value) 
+    email.value = "";
 }
     
